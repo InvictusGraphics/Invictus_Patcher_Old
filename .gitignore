@@ -1,0 +1,6 @@
+# Ignore Eclipse
+/bin
+/build
+
+# Ignore SyncToy
+*.dat
