@@ -1,5 +1,6 @@
 package com.invictus;
 
+import com.invictus.framework.Invictus_Patcher;
 import com.invictus.log.LogLevel;
 import com.invictus.log.Logger;
 
@@ -13,9 +14,8 @@ public class Main {
 		
 		Logger.logInfo("Starting Patcher");
 		
-		// Create windows
-		
-		// Display loading window
+		// Create patcher
+		Invictus_Patcher patcher = new Invictus_Patcher();
 		
 		// Load data
 		
