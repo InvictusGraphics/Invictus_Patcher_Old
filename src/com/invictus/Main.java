@@ -8,7 +8,7 @@ public class Main {
 	
 	// Final variable
 	public static final String VERSION = "0.0";
-	public static final LogLevel LOGLEVEL = LogLevel.DEBUG;
+	public static final LogLevel LOGLEVEL = LogLevel.INFO;
 
 	public static void main(String[] args) {
 		
