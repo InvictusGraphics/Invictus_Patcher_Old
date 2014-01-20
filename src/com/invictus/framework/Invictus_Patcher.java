@@ -14,16 +14,29 @@ public class Invictus_Patcher {
 	
 	JFrame frame_main;
 	JFrame frame_loading;
+	JFrame frame_rainbow;
 
 	public Invictus_Patcher() {
 		
 		// Create frames
 		this.frame_main();
 		this.frame_loading();
+		this.frame_button();
 		
 		// Temp make visible
 		frame_main.setVisible(true);
 		frame_loading.setVisible(true);
+		frame_rainbow.setVisible(true);
+	}
+	private void frame_button(){
+		frame_rainbow = new JFrame("Terratex");
+		frame_rainbow.setSize(300,150);
+		frame_rainbow.setLocationRelativeTo(null);
+		JLabel background = new JLabel(new ImageIcon(getClass().getResource("/resources/frame_main/background_rainbow.png")));
+		frame_rainbow.setContentPane(background);
+		ImageButton tab0 = new ImageButton("/resources/tabs/tab_normal_rainbow.png", "/resources/tabs/tab_pressed_rainbow.png", "/resources/tabs/tab_hover_rainbow.png", "/resources/tabs/tab_disabled.png");
+		tab0.setLocation(53,25);
+		frame_rainbow.add(tab0);
 	}
 	
 	private void frame_main(){
